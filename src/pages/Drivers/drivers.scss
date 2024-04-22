@@ -1,0 +1,110 @@
+@import '../../style.scss';
+.Drivers{
+      color: #555;
+      display: flex;
+      justify-content: center;
+     
+  .container {
+    margin-top: 40px;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+     @include tablet{
+              padding:0 20px 20px;
+            }
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #555;
+
+      img {
+        width: 50px;
+        object-fit: cover;
+      }
+    }
+
+    span {
+      font-weight: 500;
+    }
+    .Add {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      button {
+        background-color: #1dbf73;
+        border: none;
+        outline: none;
+        padding: 3px 15px;
+        font-weight: bold;
+        border-radius: 4px;
+      }
+      .search {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        padding: 5px;
+        border-radius: 4px;
+        input {
+          border: none;
+          outline: none;
+        }
+      }
+    }
+
+    table {
+      width: 100%;
+      text-align: center;
+
+      tr {
+        th {
+          color: #555 !important;
+          background-color: #1dbf730f;
+
+          border: 5px solid white;
+            @include mobile{
+             &:nth-child(3),
+          &:nth-child(4){
+            display: none;
+          }
+          }
+        }
+        td {
+          background-color: #1dbf730f;
+          padding: 0;
+          border: 5px solid white;
+
+          &:first-child {
+            font-weight: 500;
+          }
+
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4) {
+            color: gray;
+          }
+            @include mobile{
+             &:nth-child(3),
+          &:nth-child(4){
+            display: none;
+          }
+          }
+        }
+
+        button {
+          background-color: transparent;
+          color: rgb(243, 32, 32);
+          padding: 5px;
+          border: none;
+          cursor: pointer;
+          &:first-child {
+            color: #1dbf73;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

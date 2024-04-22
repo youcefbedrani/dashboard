@@ -1,0 +1,40 @@
+.navbar {
+  padding: 10px 20px;
+  height: 60px;
+  border-bottom: 0.5px solid rgb(214, 213, 213);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: white;
+ justify-content: center;
+  .logo {
+    img {
+        width: 90px;
+        // transform: translateX(-50%);
+    }
+  }
+  .info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    .admin {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      span{
+        font-size: 15px;
+        font-weight: bold;
+      }
+    }
+    img{
+        width: 40px;
+        border: 0.5px solid gray;
+    }
+  }
+}
